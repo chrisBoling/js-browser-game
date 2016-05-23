@@ -30,11 +30,11 @@ function gameObject (width, height, color, x, y, type) {
 var gameWindow = {
     canvas : document.createElement("canvas"),
     start : function() {
-        this.canvas.width = 480;
-        this.canvas.height = 270;
+        this.canvas.width = 600;
+        this.canvas.height = 600;
         this.context = this.canvas.getContext('2d');
         var container = document.getElementById('gameArea');
-        document.body.insertBefore(this.canvas, container.firstChild);
+        container.insertBefore(this.canvas, container.firstChild);
      //   this.interval = setInterval(updateGameArea, 20);
         },
     clear : function() {
